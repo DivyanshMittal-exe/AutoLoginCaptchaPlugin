@@ -1,0 +1,30 @@
+{
+	"name": "IITD Captcha Solver",
+	"version": "1.1",
+	"description": "Solve kerbrose",
+	"default_title": "Add username-password",
+	"default_popup": "home.html",
+	"content_scripts": [ {
+		"matches": [
+			"https://oauth.iitd.ac.in/*"
+		],
+		"run_at": "document_idle",
+		"js": ["ocrad.js", "OAuth.js"]
+	},{
+		"matches": [
+			"https://webmail.iitd.ac.in/*"
+		],
+		"run_at": "document_idle",
+		"js": ["ocrad.js", "Webmail.js"]
+	},{
+		"matches": [
+			"https://moodle.iitd.ac.in/login/index.php"
+		],
+		"run_at": "document_idle",
+		"js": ["ocrad.js", "Moodle.js"]
+	}],
+	"permissions": [
+		"storage"
+	  ],
+	"manifest_version": 2
+}
