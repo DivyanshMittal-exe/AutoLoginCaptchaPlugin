@@ -10,7 +10,6 @@ chrome.storage.sync.get("password", function (data) {
 });
 
 
-
 var x = document.getElementsByClassName("captcha-image")[0]
 console.log(x);
 var string = OCRAD(x);
