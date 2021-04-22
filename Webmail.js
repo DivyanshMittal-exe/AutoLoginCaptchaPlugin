@@ -20,8 +20,10 @@ window.onload = function () {
   //console.log(usrnam);
   usrnam = usrnam + "@iitd.ac.in";
   console.log(usrnam);
-  document.getElementById("rcmloginuser").setAttribute("value", usrnam);
-  document.getElementById("rcmloginpwd").setAttribute("value", psswrd);
+  document.getElementById("rcmloginuser").value = usrnam
+  document.getElementById("rcmloginpwd").value=  psswrd
   inp.setAttribute("value", string);
+  document.getElementById("logo").click();
+  document.getElementById("rcmloginpwd").click()
   document.getElementById("rcmloginsubmit").click();
 };
