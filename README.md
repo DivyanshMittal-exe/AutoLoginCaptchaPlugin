@@ -1,6 +1,7 @@
 # AutoLoginCaptchaPlugin
 
-Automatially login to moodle, sites with oauth and webmail
+Automatially login to moodle, sites with oauth and webmail using OCRAD and OpenCV
+
 
 
 ### Installation
